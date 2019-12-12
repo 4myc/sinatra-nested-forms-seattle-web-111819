@@ -1,5 +1,5 @@
 require './environment'
-
+require 'byebug'
 
 module FormsLab
   class App < Sinatra::Base
@@ -23,8 +23,8 @@ module FormsLab
       
       @ships = Ship.all
 
+      # #need logic
       erb :'pirates/show'
     end
-
   end
 end
