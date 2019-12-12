@@ -15,6 +15,8 @@ module FormsLab
 
     post '/pirates' do
       # byebug
+
+      #NOT NEEDED?
       @pirate = Pirate.new(params[:pirate])
       
       params[:pirate][:ships].each do |details|
@@ -23,7 +25,6 @@ module FormsLab
       
       @ships = Ship.all
 
-      # #need logic
       erb :'pirates/show'
     end
   end
